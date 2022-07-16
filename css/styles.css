@@ -510,31 +510,38 @@ a {
 /* // ----- Testimonial ----- */
 .testimonial {
     padding: 3rem;
-}
-
-.testimonial__image {
+  }
+  
+  .testimonial__image {
     position: relative;
-}
-
-.testimonial__image > img{
+    margin: 0 3rem;
+  }
+  
+  .testimonial__image > img {
     width: 100%;
-}pl
-
-.testimonial__image > .icon-container {
+  }
+  
+  .testimonial__image > .icon-container {
     position: absolute;
     top: 3rem;
     right: -32px;
-}
-
-@media screen and (min-width: 768px) {
+  }
+  
+  @media screen and (min-width: 768px) {
+    .testimonial__image {
+      margin: 0;
+    }
+  
     .testimonial .quote,
     .testimonial .quote__author {
-        font-size: 2.4rem;
+      font-size: 2.4rem;
     }
+  
     .testimonial .quote {
-        margin-left: 6rem;
+      margin-left: 6rem;
+      margin-right: 0;
     }
-} 
+  }
 
 /* // ----- Callouts ----- */
 .callout {
@@ -616,6 +623,7 @@ a {
 }
 
 .block__header{
+    margin-bottom: 4rem;
     text-align: center;
 
 }
